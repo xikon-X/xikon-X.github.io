@@ -1,9 +1,11 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
+  - title: "首页"
+    url: /
+  - title: "关于我"
     url: /about/
+  - title: "博客"
+    url: /posts/
+  - title: "项目"
+    url: /projects/
+  - title: "联系方式"
+    url: /contact/

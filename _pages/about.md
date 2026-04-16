@@ -1,8 +1,42 @@
 ---
 permalink: /about/
-title: "About"
+title: "关于我"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+## 个人简介
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+你好，我是 [你的名字]，一名 [你的职业]。我热爱 [你的兴趣爱好]，致力于 [你的专业领域]。
+
+## 教育背景
+
+- **[学位]**，[专业]，[学校名称]，[毕业年份]
+- **[学位]**，[专业]，[学校名称]，[毕业年份]
+
+## 工作经历
+
+- **[职位]**，[公司名称]，[开始日期] - [结束日期]
+  - 负责 [工作内容]
+  - 参与 [项目名称]
+
+- **[职位]**，[公司名称]，[开始日期] - [结束日期]
+  - 负责 [工作内容]
+  - 参与 [项目名称]
+
+## 技能
+
+- **技术技能**：[技能1]，[技能2]，[技能3]
+- **软技能**：[技能1]，[技能2]，[技能3]
+
+## 兴趣爱好
+
+- [兴趣1]
+- [兴趣2]
+- [兴趣3]
+
+## 联系方式
+
+- **邮箱**：your-email@example.com
+- **社交媒体**：
+  - [Twitter](https://twitter.com/your_twitter)
+  - [GitHub](https://github.com/your_github)
+  - [LinkedIn](https://linkedin.com/in/your-profile)

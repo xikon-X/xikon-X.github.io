@@ -1,29 +1,26 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2019-04-18T15:34:30-04:00
-categories:
-  - blog
-tags:
-  - Jekyll
-  - update
+title: "欢迎来到我的个人主页"
+date: 2019-04-18 16:44:02 -0400
+categories: 个人博客
 ---
 
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+欢迎访问我的个人主页！这里是我分享技术心得、生活感悟和项目经验的地方。
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## 关于这个网站
 
-Jekyll also offers powerful support for code snippets:
+这个网站使用 Jekyll 构建，托管在 GitHub Pages 上。我希望通过这个平台记录我的学习和成长过程，同时与更多志同道合的朋友交流。
 
-```ruby
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-```
+## 网站内容
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+- **博客**：分享技术文章、学习笔记和生活感悟
+- **项目**：展示我参与或独立完成的项目
+- **关于我**：个人简介、教育背景、工作经历等
+- **联系方式**：如何与我取得联系
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## 未来计划
+
+- 定期更新技术文章
+- 分享更多项目经验
+- 记录学习成长历程
+
+感谢您的访问！
