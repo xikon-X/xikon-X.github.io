@@ -9,3 +9,8 @@ main:
     url: /projects/
   - title: "联系方式"
     url: /contact/
+  - title: "主题"
+    url: "#"
+    id: "theme-toggle"
+    icon: ""
+    class: "theme-toggle-btn"

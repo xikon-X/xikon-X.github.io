@@ -18,6 +18,9 @@ description: "分享技术心得、生活感悟和项目经验的个人空间"
 minimal_mistakes_skin: default
 search: false
 
+# 深色模式支持
+dark_theme: true
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes

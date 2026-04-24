@@ -1,0 +1,59 @@
+---
+permalink: /test-theme/
+title: "主题测试"
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>主题测试</title>
+  <link rel="stylesheet" href="{{ "assets/css/theme.css" | relative_url }}">
+  <script src="{{ "assets/js/theme-toggle.js" | relative_url }}"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+    .theme-toggle:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    [data-theme="dark"] .theme-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle">🌙</button>
+  
+  <div class="container">
+    <h1>主题测试页面</h1>
+    <p>这是一个测试深色/浅色模式切换功能的页面。</p>
+    <p>点击右上角的按钮可以切换主题。</p>
+    
+    <h2>测试内容</h2>
+    <p>这是一段测试文本，用于查看不同主题下的文字颜色。</p>
+    
+    <a href="/">返回首页</a>
+  </div>
+</body>
+</html>

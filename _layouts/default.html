@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  
+  <!-- 主题切换按钮 -->
+  <button id="theme-toggle" style="position: fixed; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; padding: 10px; border-radius: 50%; transition: background-color 0.3s ease; z-index: 1000;">🌙</button>
+  
+  <div id="main" role="main" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    <div class="card-container" style="background-color: var(--card-background); border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease;">
+      {{ content }}
+    </div>
+  </div>
+  
+  {% include footer.html %}
+</body>
+</html>
