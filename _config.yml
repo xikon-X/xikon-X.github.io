@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: 个人主页
 description: "分享技术心得、生活感悟和项目经验的个人空间"
-minimal_mistakes_skin: minimal
+minimal_mistakes_skin: default
 search: false
 
 # Build settings
@@ -78,6 +78,10 @@ footer:
       icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/zhangsan"
 
+# 极简风格设置
+breadcrumbs: false
+
+# 页面布局设置
 defaults:
   # _posts
   - scope:
@@ -90,6 +94,9 @@ defaults:
       comments: false
       share: false
       related: false
+      toc: false
+      toc_sticky: false
+      classes: wide
   # _pages
   - scope:
       path: "_pages"
@@ -104,21 +111,5 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-# 极简风格设置
-breadcrumbs: false
-
-# 页面布局设置
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      toc: false
-      toc_sticky: false
-      classes: wide
 
 
