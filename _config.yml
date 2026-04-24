@@ -14,16 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 个人主页
-twitter_username: your_twitter
-github_username: your_github
-minimal_mistakes_skin: default
-search: true
+description: "分享技术心得、生活感悟和项目经验的个人空间"
+minimal_mistakes_skin: minimal
+search: false
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Shanghai
@@ -53,34 +52,31 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "你的名字"
+  name   : "希空xikon"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "这里是你的个人简介，简要描述你的专业背景、兴趣爱好等。"
+  bio    : "在读本科生，不断学习，无限进步"
   links:
-    - label: "网站"
-      icon: "fas fa-fw fa-link"
-      url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/your_twitter"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/your_github"
+      url: "https://github.com/zhangsan"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/your-profile"
+      url: "https://linkedin.com/in/zhangsan"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/zhangsan"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/your_twitter"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/your_github"
+      url: "https://github.com/zhangsan"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/your-profile"
+      url: "https://linkedin.com/in/zhangsan"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/zhangsan"
 
 defaults:
   # _posts
@@ -89,11 +85,11 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: "_pages"
@@ -108,5 +104,21 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# 极简风格设置
+breadcrumbs: false
+
+# 页面布局设置
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      toc: false
+      toc_sticky: false
+      classes: wide
 
 
