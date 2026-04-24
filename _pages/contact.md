@@ -13,8 +13,8 @@ title: "联系方式"
 
 ### 社交媒体
 - [GitHub](https://github.com/zhangsan) - 查看我的代码和项目
-- [LinkedIn](https://linkedin.com/in/zhangsan) - 职业人脉和经历
-- [Twitter](https://twitter.com/zhangsan) - 技术分享和见解
+- [哔哩哔哩](https://bilibili.com/your-username) - 视频内容和分享
+- [抖音](https://tiktok.com/@your-username) - 短视频和生活记录
 
 ### 其他方式
 - **Stack Overflow**：[用户档案](https://stackoverflow.com/users/123456/zhangsan)

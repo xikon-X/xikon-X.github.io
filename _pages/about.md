@@ -59,5 +59,5 @@ title: "关于我"
 - **邮箱**：zhangsan@example.com
 - **社交媒体**：
   - [GitHub](https://github.com/zhangsan)
-  - [LinkedIn](https://linkedin.com/in/zhangsan)
-  - [Twitter](https://twitter.com/zhangsan)
+  - [哔哩哔哩](https://bilibili.com/your-username)
+  - [抖音](https://tiktok.com/@your-username)

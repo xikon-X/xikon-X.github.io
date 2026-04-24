@@ -1,0 +1,63 @@
+# 多语言支持
+en:
+  site:
+    title: "Personal Homepage"
+    description: "Sharing technical insights, life reflections, and project experiences"
+  navigation:
+    home: "Home"
+    about: "About"
+    blog: "Blog"
+    projects: "Projects"
+    contact: "Contact"
+    theme: "Theme"
+  about:
+    title: "About Me"
+    intro: "Hello, I'm 希空xikon, an undergraduate student. I'm constantly learning and making progress."
+    background: "Educational Background"
+    experience: "Work Experience"
+    projects: "Project Experience"
+    skills: "Skills"
+    hobbies: "Hobbies"
+    contact: "Contact"
+  projects:
+    title: "Projects"
+    description: "Here are the projects I've participated in or completed independently, covering front-end, back-end, and full-stack development."
+  contact:
+    title: "Contact"
+    description: "If you have any questions, cooperation intentions, or suggestions, feel free to contact me through the following methods:"
+    direct: "Direct Contact"
+    social: "Social Media"
+    other: "Other Methods"
+    cooperation: "Cooperation Intentions"
+    message: "Message"
+zh:
+  site:
+    title: "个人主页"
+    description: "分享技术心得、生活感悟和项目经验的个人空间"
+  navigation:
+    home: "首页"
+    about: "关于我"
+    blog: "博客"
+    projects: "项目"
+    contact: "联系方式"
+    theme: "主题"
+  about:
+    title: "关于我"
+    intro: "你好，我是希空xikon，一名在读本科生。我不断学习，无限进步。"
+    background: "教育背景"
+    experience: "工作经历"
+    projects: "项目经验"
+    skills: "技能"
+    hobbies: "兴趣爱好"
+    contact: "联系方式"
+  projects:
+    title: "项目"
+    description: "这里展示我参与或独立完成的项目，涵盖前端、后端和全栈开发。"
+  contact:
+    title: "联系方式"
+    description: "如果您有任何问题、合作意向或建议，欢迎通过以下方式联系我："
+    direct: "直接联系"
+    social: "社交媒体"
+    other: "其他方式"
+    cooperation: "合作意向"
+    message: "留言"

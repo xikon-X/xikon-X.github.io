@@ -1,3 +1,4 @@
+# 中文导航
 main:
   - title: "首页"
     url: /
@@ -14,3 +15,31 @@ main:
     id: "theme-toggle"
     icon: ""
     class: "theme-toggle-btn"
+  - title: "EN"
+    url: "#"
+    id: "language-toggle"
+    icon: ""
+    class: "language-toggle-btn"
+
+# 英文导航
+main_en:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Blog"
+    url: /posts/
+  - title: "Projects"
+    url: /projects/
+  - title: "Contact"
+    url: /contact/
+  - title: "Theme"
+    url: "#"
+    id: "theme-toggle"
+    icon: ""
+    class: "theme-toggle-btn"
+  - title: "中文"
+    url: "#"
+    id: "language-toggle"
+    icon: ""
+    class: "language-toggle-btn"
