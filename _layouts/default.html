@@ -2,8 +2,23 @@
 <html lang="zh-CN">
 {% include head.html %}
 <body>
+  <!-- 全局样式重置 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  </style>
+  
   <!-- 导航栏 -->
-  <nav style="background-color: var(--header-background); border-bottom: 1px solid var(--border-color); padding: 15px 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+  <nav style="background-color: var(--header-background); border-bottom: 1px solid var(--border-color); padding: 15px 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; margin: 0; width: 100%;">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
       <!-- 左侧 logo -->
       <a href="/" style="font-size: 1.5rem; font-weight: bold; color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 10px;">
