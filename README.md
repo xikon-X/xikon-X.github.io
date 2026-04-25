@@ -1,27 +1,70 @@
-# Minimal Mistakes remote theme starter
+# 个人主页网站
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+这是一个基于 Jekyll 构建的个人主页网站，包含个人简介、项目展示、博客和联系方式等功能。
 
-Contains basic configuration to get you a site with:
+## 功能特点
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+- **响应式设计**：适配不同屏幕尺寸，在手机、平板和桌面设备上都能正常显示
+- **卡片式布局**：采用现代化的卡片式设计，视觉效果简洁美观
+- **深色/浅色模式**：支持主题切换，适应不同的使用环境
+- **多语言支持**：包含中文和英文两种语言版本
+- **社交媒体集成**：集成 GitHub 和哔哩哔哩等社交媒体链接
+- **项目展示**：以卡片形式展示个人项目，包含项目描述、技术栈和 GitHub 链接
+- **博客功能**：支持发布和展示博客文章
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## 技术栈
 
----
+- **Jekyll**：静态网站生成器
+- **HTML5**：网页结构
+- **CSS3**：样式设计
+- **JavaScript**：交互功能
+- **Font Awesome**：图标库
+- **GitHub Pages**：网站托管
 
-## Troubleshooting
+## 安装和使用
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+### 本地开发
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+1. **安装依赖**
+   ```bash
+   bundle install
+   ```
+
+2. **启动本地服务器**
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+3. **访问本地站点**
+   打开浏览器，访问 `http://localhost:4000`
+
+### 部署
+
+项目使用 GitHub Pages 进行部署，推送代码到 `master` 分支后，GitHub Pages 会自动构建和部署网站。
+
+## 项目结构
+
+```
+├── _data/            # 数据文件
+├── _includes/        # 页面组件
+├── _layouts/         # 页面布局
+├── _pages/           # 页面内容
+├── _posts/           # 博客文章
+├── assets/           # 静态资源
+├── _config.yml       # 网站配置
+└── README.md         # 项目说明
+```
+
+## 源代码出处
+
+本项目基于 [Minimal Mistakes Jekyll 主题](https://github.com/mmistakes/minimal-mistakes) 构建，感谢原作者的贡献。
+
+## 许可证
+
+本项目采用 MIT 许可证，详见 [LICENSE](LICENSE) 文件。
+
+## 联系方式
+
+- **邮箱**：zydpyxmc@outlook.com
+- **GitHub**：[https://github.com/xikon-X](https://github.com/xikon-X)
+- **哔哩哔哩**：[https://space.bilibili.com/3546700958403385](https://space.bilibili.com/3546700958403385)

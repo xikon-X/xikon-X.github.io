@@ -56,7 +56,7 @@
       <!-- 中间导航链接 -->
       <div style="display: flex; gap: 20px; align-items: center;">
         <a href="/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">首页</a>
-        <a href="/posts/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">博客</a>
+        <a href="/blog/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">博客</a>
         <a href="/projects/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">项目</a>
         <a href="/me/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">我</a>
       </div>
@@ -103,28 +103,7 @@
     </div>
   </footer>
   
-  <!-- 返回顶部按钮 -->
-  <button id="back-to-top" style="position: fixed; bottom: 30px; right: 30px; background-color: var(--card-background); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; opacity: 0; visibility: hidden; z-index: 999;">
-    <i class="far fa-fw fa-arrow-up"></i>
-  </button>
-  
   <script>
-    // 返回顶部按钮功能
-    const backToTopButton = document.getElementById('back-to-top');
-    
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopButton.style.opacity = '1';
-        backToTopButton.style.visibility = 'visible';
-      } else {
-        backToTopButton.style.opacity = '0';
-        backToTopButton.style.visibility = 'hidden';
-      }
-    });
-    
-    backToTopButton.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
     
     // 导航链接悬停效果
     const navLinks = document.querySelectorAll('nav a');
