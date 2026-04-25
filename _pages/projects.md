@@ -7,37 +7,30 @@ title: "项目"
 
 这里展示我参与或独立完成的项目，涵盖前端、后端和全栈开发。
 
-### 电商平台
-**项目名称**：E-Shop
-**描述**：一个全功能的电商系统，支持商品展示、购物车、支付和订单管理等功能。
-**技术栈**：React, Redux, Node.js, Express, MongoDB
-**职责**：负责前端架构设计和开发，实现响应式布局和用户交互。
-**链接**：[GitHub 仓库](https://github.com/zhangsan/eshop)
+### 个人主页网站
+**项目名称**：个人主页
+**描述**：使用Jekyll构建的个人主页，包含关于我、项目展示、博客和联系方式等功能。
+**技术栈**：Jekyll, HTML5, CSS3, JavaScript, Font Awesome
+**职责**：独立设计和开发，包括主题定制、功能实现和响应式布局。
+**链接**：[GitHub 仓库](https://github.com/xikon-X/xikon-X.github.io)
 
-### 内容管理系统
-**项目名称**：CMS Pro
-**描述**：企业级内容管理系统，支持多用户权限管理、内容编辑和发布。
-**技术栈**：Vue, Vuex, Node.js, Express, MySQL
-**职责**：全栈开发，包括前端界面和后端API。
-**链接**：[GitHub 仓库](https://github.com/zhangsan/cms-pro)
+### 任务管理应用
+**项目名称**：Task Manager
+**描述**：一个简单的任务管理应用，支持任务创建、编辑、删除和状态管理。
+**技术栈**：React, TypeScript, Redux, Node.js, Express, MongoDB
+**职责**：前端开发，实现用户界面和交互逻辑。
+**链接**：[GitHub 仓库](https://github.com/xikon-X/task-manager)
 
-### 移动应用后端
-**项目名称**：Mobile Backend
-**描述**：为iOS和Android应用提供RESTful API服务，支持用户认证、数据存储和推送通知。
-**技术栈**：Python, Flask, PostgreSQL, Redis
-**职责**：设计和实现API架构，优化数据库性能。
-**链接**：[GitHub 仓库](https://github.com/zhangsan/mobile-backend)
+### 天气应用
+**项目名称**：Weather App
+**描述**：基于天气API的天气查询应用，支持实时天气和预报功能。
+**技术栈**：Vue, Vuex, Axios, OpenWeatherMap API
+**职责**：全栈开发，包括前端界面和后端API集成。
+**链接**：[GitHub 仓库](https://github.com/xikon-X/weather-app)
 
-### 个人博客系统
-**项目名称**：Blog Engine
-**描述**：基于Jekyll的静态博客系统，支持Markdown编辑和主题定制。
-**技术栈**：Jekyll, Liquid, SCSS
-**职责**：定制主题和功能扩展。
-**链接**：[GitHub 仓库](https://github.com/zhangsan/blog-engine)
-
-### 数据分析工具
-**项目名称**：Data Analyzer
-**描述**：用于数据分析和可视化的Web应用，支持数据导入、处理和图表展示。
-**技术栈**：React, D3.js, Python, Flask
-**职责**：前端数据可视化和后端数据处理。
-**链接**：[GitHub 仓库](https://github.com/zhangsan/data-analyzer)
+### 图书管理系统
+**项目名称**：Library Management System
+**描述**：简单的图书管理系统，支持图书的添加、查询、借阅和归还。
+**技术栈**：Python, Django, SQLite, Bootstrap
+**职责**：后端开发，设计数据库模型和API。
+**链接**：[GitHub 仓库](https://github.com/xikon-X/library-management-system)

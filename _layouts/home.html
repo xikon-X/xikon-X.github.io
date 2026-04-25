@@ -2,37 +2,41 @@
 layout: default
 ---
 
-<div class="home">
-  <h1 class="page-title">{{ site.title }}</h1>
-  <p class="page-description">{{ site.description }}</p>
+<div class="home" style="padding: 20px 0; text-align: center;">
+  <div style="margin-bottom: 40px;">
+    <h1 class="page-title">{{ site.title }}</h1>
+    <p class="page-description" style="font-size: 1.2rem; color: var(--text-color); opacity: 0.8; max-width: 800px; margin: 20px auto;">{{ site.description }}</p>
+  </div>
   
   {% if site.author.bio %}
-    <div class="author-profile">
-      <h2>关于我</h2>
-      <p>{{ site.author.bio }}</p>
+    <div class="author-profile" style="margin: 40px 0; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <h2 style="margin-bottom: 20px;">关于我</h2>
+      <p style="font-size: 1.1rem; line-height: 1.6;">{{ site.author.bio }}</p>
     </div>
   {% endif %}
   
   {% if site.posts.size > 0 %}
-    <h2>最新博客</h2>
-    <ul class="post-list">
-      {% for post in site.posts limit:5 %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {% if post.excerpt %}
-            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-    
-    <p class="rss-subscribe">
-      <a href="{{ "/feed.xml" | relative_url }}">订阅 RSS  feed</a>
-    </p>
+    <div style="max-width: 800px; margin: 40px auto;">
+      <h2 style="margin-bottom: 20px;">最新动态</h2>
+      <ul class="post-list" style="margin-top: 20px; text-align: left;">
+        {% for post in site.posts limit:3 %}
+          <li style="margin-bottom: 20px; padding: 15px; background-color: var(--card-background); border-radius: 8px; border: 1px solid var(--border-color); transition: all 0.3s ease;">
+            <span class="post-meta" style="font-size: 0.9rem; color: var(--text-color); opacity: 0.6;">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <h3 style="margin: 10px 0;">
+              <a class="post-link" href="{{ post.url | relative_url }}" style="color: var(--text-color); text-decoration: none;">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {% if post.excerpt %}
+              <p class="post-excerpt" style="font-size: 1rem; line-height: 1.5; color: var(--text-color); opacity: 0.8;">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+      
+      <p class="rss-subscribe" style="margin-top: 30px;">
+        <a href="{{ "/posts/" | relative_url }}" style="color: var(--link-color); text-decoration: none; font-weight: 500;">查看更多动态</a>
+      </p>
+    </div>
   {% endif %}
 </div>
