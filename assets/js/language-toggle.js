@@ -49,21 +49,17 @@
     // 根据当前路径和目标语言确定新路径
     if (language === 'en') {
       // 中文页面切换到英文页面
-      if (currentPath === '/about/') {
-        newPath = '/about-en/';
+      if (currentPath === '/me/') {
+        newPath = '/me-en/';
       } else if (currentPath === '/projects/') {
         newPath = '/projects-en/';
-      } else if (currentPath === '/contact/') {
-        newPath = '/contact-en/';
       }
     } else {
       // 英文页面切换到中文页面
-      if (currentPath === '/about-en/') {
-        newPath = '/about/';
+      if (currentPath === '/me-en/') {
+        newPath = '/me/';
       } else if (currentPath === '/projects-en/') {
         newPath = '/projects/';
-      } else if (currentPath === '/contact-en/') {
-        newPath = '/contact/';
       }
     }
     

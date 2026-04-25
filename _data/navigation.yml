@@ -2,14 +2,12 @@
 main:
   - title: "首页"
     url: /
-  - title: "关于我"
-    url: /about/
+  - title: "我"
+    url: /me/
   - title: "博客"
     url: /posts/
   - title: "项目"
     url: /projects/
-  - title: "联系方式"
-    url: /contact/
   - title: "主题"
     url: "#"
     id: "theme-toggle"
@@ -25,14 +23,12 @@ main:
 main_en:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /about/
+  - title: "Me"
+    url: /me/
   - title: "Blog"
     url: /posts/
   - title: "Projects"
     url: /projects/
-  - title: "Contact"
-    url: /contact/
   - title: "Theme"
     url: "#"
     id: "theme-toggle"
