@@ -12,31 +12,18 @@ title: "我"
 <div style="background-color: var(--card-background); border-radius: 8px; box-shadow: var(--card-shadow); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease; border: 1px solid var(--border-color);">
 ## 专业背景
 
-- **前端开发**：HTML5, CSS3, JavaScript, React, Vue
-- **后端开发**：Node.js, Python, Java
-- **数据库**：MySQL, MongoDB
-- **工具**：Git, VS Code, Docker
+- **编程语言**：熟悉C语言
 </div>
 
 <div style="background-color: var(--card-background); border-radius: 8px; box-shadow: var(--card-shadow); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease; border: 1px solid var(--border-color);">
 ## 教育经历
 
-- **学士学位**，计算机科学与技术，[大学名称]，2022 - 2026（预计）
+- **学士学位**，电子信息工程，[大学名称]，2022 - 2026（预计）
   - 主修课程：数据结构、算法、操作系统、计算机网络、数据库原理
   - 辅修课程：人工智能、机器学习、云计算
 </div>
 
-<div style="background-color: var(--card-background); border-radius: 8px; box-shadow: var(--card-shadow); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease; border: 1px solid var(--border-color);">
-## 技能评估
 
-| 技能 | 熟练度 |
-|------|--------|
-| JavaScript | ★★★★☆ |
-| React | ★★★☆☆ |
-| Python | ★★★★☆ |
-| 数据结构与算法 | ★★★☆☆ |
-| 数据库设计 | ★★★☆☆ |
-</div>
 
 <div style="background-color: var(--card-background); border-radius: 8px; box-shadow: var(--card-shadow); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease; border: 1px solid var(--border-color);">
 ## 兴趣爱好
@@ -64,12 +51,9 @@ title: "我"
 
 ### 直接联系
 - **邮箱**：xikon@example.com
-- **电话**：+86 138 **** 8888
 
 ### 社交媒体
 - [GitHub](https://github.com/xikon-X) - 查看我的代码和项目
-- [哔哩哔哩](https://bilibili.com/your-username) - 视频内容和分享
-- [抖音](https://www.douyin.com/user/your-username) - 短视频和生活记录
 
 ### 合作意向
 
