@@ -58,6 +58,6 @@ title: "关于我"
 
 - **邮箱**：zhangsan@example.com
 - **社交媒体**：
-  - [GitHub](https://github.com/zhangsan)
+  - [GitHub](https://github.com/xikon-X)
   - [哔哩哔哩](https://bilibili.com/your-username)
-  - [抖音](https://tiktok.com/@your-username)
+  - [抖音](https://www.douyin.com/user/your-username)

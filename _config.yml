@@ -61,25 +61,25 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/zhangsan"
+      url: "https://github.com/xikon-X"
     - label: "哔哩哔哩"
       icon: "fab fa-fw fa-bilibili"
       url: "https://bilibili.com/your-username"
     - label: "抖音"
       icon: "fab fa-fw fa-tiktok"
-      url: "https://tiktok.com/@your-username"
+      url: "https://www.douyin.com/user/your-username"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/zhangsan"
+      url: "https://github.com/xikon-X"
     - label: "哔哩哔哩"
       icon: "fab fa-fw fa-bilibili"
       url: "https://bilibili.com/your-username"
     - label: "抖音"
       icon: "fab fa-fw fa-tiktok"
-      url: "https://tiktok.com/@your-username"
+      url: "https://www.douyin.com/user/your-username"
 
 # 极简风格设置
 breadcrumbs: false

@@ -13,9 +13,9 @@ If you have any questions, cooperation intentions, or suggestions, feel free to 
 - **Phone**: +86 138 **** 8888
 
 ### Social Media
-- [GitHub](https://github.com/your-github) - View my code and projects
+- [GitHub](https://github.com/xikon-X) - View my code and projects
 - [Bilibili](https://bilibili.com/your-username) - Video content and sharing
-- [TikTok](https://tiktok.com/@your-username) - Short videos and life records
+- [Douyin](https://www.douyin.com/user/your-username) - Short videos and life records
 
 ### Other Methods
 - **Stack Overflow**: [User Profile](https://stackoverflow.com/users/123456/your-username)

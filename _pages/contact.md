@@ -12,9 +12,9 @@ title: "联系方式"
 - **电话**：+86 138 **** 8888
 
 ### 社交媒体
-- [GitHub](https://github.com/zhangsan) - 查看我的代码和项目
+- [GitHub](https://github.com/xikon-X) - 查看我的代码和项目
 - [哔哩哔哩](https://bilibili.com/your-username) - 视频内容和分享
-- [抖音](https://tiktok.com/@your-username) - 短视频和生活记录
+- [抖音](https://www.douyin.com/user/your-username) - 短视频和生活记录
 
 ### 其他方式
 - **Stack Overflow**：[用户档案](https://stackoverflow.com/users/123456/zhangsan)

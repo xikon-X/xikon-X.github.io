@@ -28,6 +28,6 @@ Hello, I'm 希空xikon, an undergraduate student. I'm constantly learning and ma
 ## Contact
 
 - **Email**: your-email@example.com
-- **GitHub**: [GitHub Profile](https://github.com/your-github)
+- **GitHub**: [GitHub Profile](https://github.com/xikon-X)
 - **Bilibili**: [Bilibili Profile](https://bilibili.com/your-username)
-- **TikTok**: [TikTok Profile](https://tiktok.com/@your-username)
+- **Douyin**: [Douyin Profile](https://www.douyin.com/user/your-username)
