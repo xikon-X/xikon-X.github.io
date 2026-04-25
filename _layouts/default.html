@@ -3,41 +3,120 @@
 {% include head.html %}
 <body>
   <!-- 导航栏 -->
-  <nav style="background-color: var(--header-background); border-bottom: 1px solid var(--border-color); padding: 10px 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+  <nav style="background-color: var(--header-background); border-bottom: 1px solid var(--border-color); padding: 15px 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000;">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-      <a href="/" style="font-size: 1.5rem; font-weight: bold; color: var(--text-color); text-decoration: none;">{{ site.title }}</a>
-      <div style="display: flex; gap: 15px; align-items: center;">
-        <a href="/" style="color: var(--text-color); text-decoration: none;">首页</a>
-        <a href="/about/" style="color: var(--text-color); text-decoration: none;">关于我</a>
-        <a href="/posts/" style="color: var(--text-color); text-decoration: none;">博客</a>
-        <a href="/projects/" style="color: var(--text-color); text-decoration: none;">项目</a>
-        <a href="/contact/" style="color: var(--text-color); text-decoration: none;">联系方式</a>
+      <!-- 左侧 logo -->
+      <a href="/" style="font-size: 1.5rem; font-weight: bold; color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.8rem;">⚡</span>
+        {{ site.title }}
+      </a>
+      
+      <!-- 中间导航链接 -->
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <a href="/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">首页</a>
+        <a href="/about/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">关于我</a>
+        <a href="/posts/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">博客</a>
+        <a href="/projects/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">项目</a>
+        <a href="/contact/" style="color: var(--text-color); text-decoration: none; font-weight: 500; transition: all 0.3s ease; padding: 5px 10px; border-radius: 4px;">联系方式</a>
+      </div>
+      
+      <!-- 右侧功能按钮 -->
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <!-- 社交媒体图标 -->
+        <div style="display: flex; gap: 10px; margin-right: 15px;">
+          <a href="{{ site.author.links[0].url }}" style="color: var(--text-color); text-decoration: none; font-size: 1.2rem; transition: all 0.3s ease; padding: 5px; border-radius: 50%;" title="{{ site.author.links[0].label }}">
+            <i class="{{ site.author.links[0].icon }}"></i>
+          </a>
+          <a href="{{ site.author.links[1].url }}" style="color: var(--text-color); text-decoration: none; font-size: 1.2rem; transition: all 0.3s ease; padding: 5px; border-radius: 50%;" title="{{ site.author.links[1].label }}">
+            <i class="{{ site.author.links[1].icon }}"></i>
+          </a>
+          <a href="{{ site.author.links[2].url }}" style="color: var(--text-color); text-decoration: none; font-size: 1.2rem; transition: all 0.3s ease; padding: 5px; border-radius: 50%;" title="{{ site.author.links[2].label }}">
+            <i class="{{ site.author.links[2].icon }}"></i>
+          </a>
+        </div>
+        
+        <!-- 语言切换按钮 -->
+        <button id="language-toggle" style="background: none; border: 1px solid var(--border-color); font-size: 14px; cursor: pointer; padding: 5px 10px; border-radius: 20px; transition: all 0.3s ease; background-color: var(--card-background); color: var(--text-color); font-weight: 500;">EN</button>
+        
+        <!-- 主题切换按钮 -->
+        <button id="theme-toggle" style="background: none; border: none; font-size: 1.2rem; cursor: pointer; padding: 8px; border-radius: 50%; transition: all 0.3s ease; background-color: var(--card-background); color: var(--text-color);">🌙</button>
       </div>
     </div>
   </nav>
   
-  <!-- 主题切换按钮 -->
-  <button id="theme-toggle" style="position: fixed; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; padding: 10px; border-radius: 50%; transition: background-color 0.3s ease; z-index: 1000;">🌙</button>
-  
-  <!-- 语言切换按钮 -->
-  <button id="language-toggle" style="position: fixed; top: 20px; right: 70px; background: none; border: 1px solid var(--border-color); font-size: 14px; cursor: pointer; padding: 5px 10px; border-radius: 20px; transition: all 0.3s ease; z-index: 1000; background-color: var(--card-background); color: var(--text-color);">EN</button>
-  
-  <div id="main" role="main" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
-    <div class="card-container" style="background-color: var(--card-background); border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); padding: 30px; margin-bottom: 30px; transition: all 0.3s ease;">
+  <div id="main" role="main" style="max-width: 1200px; margin: 0 auto; padding: 30px 20px;">
+    <div class="card-container" style="background-color: var(--card-background); border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); padding: 40px; margin-bottom: 30px; transition: all 0.3s ease; border: 1px solid var(--border-color);">
       {{ content }}
     </div>
   </div>
   
   <!-- 页脚 -->
-  <footer style="background-color: var(--header-background); border-top: 1px solid var(--border-color); padding: 20px; margin-top: 30px;">
-    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-      <p style="margin-bottom: 10px;">© {{ site.time | date: '%Y' }} {{ site.title }}</p>
-      <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
-        <a href="{{ site.author.links[0].url }}" style="color: var(--text-color); text-decoration: none;">{{ site.author.links[0].label }}</a>
-        <a href="{{ site.author.links[1].url }}" style="color: var(--text-color); text-decoration: none;">{{ site.author.links[1].label }}</a>
-        <a href="{{ site.author.links[2].url }}" style="color: var(--text-color); text-decoration: none;">{{ site.author.links[2].label }}</a>
+  <footer style="background-color: var(--header-background); border-top: 1px solid var(--border-color); padding: 30px 20px; margin-top: 40px;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+      <!-- 社交媒体图标 -->
+      <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+        <a href="{{ site.author.links[0].url }}" style="color: var(--text-color); text-decoration: none; font-size: 1.4rem; transition: all 0.3s ease; padding: 8px; border-radius: 50%; background-color: var(--card-background); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);" title="{{ site.author.links[0].label }}">
+          <i class="{{ site.author.links[0].icon }}"></i>
+        </a>
+        <a href="{{ site.author.links[1].url }}" style="color: var(--text-color); text-decoration: none; font-size: 1.4rem; transition: all 0.3s ease; padding: 8px; border-radius: 50%; background-color: var(--card-background); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);" title="{{ site.author.links[1].label }}">
+          <i class="{{ site.author.links[1].icon }}"></i>
+        </a>
+        <a href="{{ site.author.links[2].url }}" style="color: var(--text-color); text-decoration: none; font-size: 1.4rem; transition: all 0.3s ease; padding: 8px; border-radius: 50%; background-color: var(--card-background); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);" title="{{ site.author.links[2].label }}">
+          <i class="{{ site.author.links[2].icon }}"></i>
+        </a>
       </div>
+      
+      <p style="margin-bottom: 10px; color: var(--text-color); opacity: 0.8;">© {{ site.time | date: '%Y' }} {{ site.title }}</p>
+      <p style="font-size: 0.9rem; color: var(--text-color); opacity: 0.6;">不断学习，无限进步</p>
     </div>
   </footer>
+  
+  <!-- 返回顶部按钮 -->
+  <button id="back-to-top" style="position: fixed; bottom: 30px; right: 30px; background-color: var(--card-background); color: var(--text-color); border: 1px solid var(--border-color); border-radius: 50%; width: 50px; height: 50px; font-size: 1.2rem; cursor: pointer; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; opacity: 0; visibility: hidden; z-index: 999;">
+    ↑
+  </button>
+  
+  <script>
+    // 返回顶部按钮功能
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.style.opacity = '1';
+        backToTopButton.style.visibility = 'visible';
+      } else {
+        backToTopButton.style.opacity = '0';
+        backToTopButton.style.visibility = 'hidden';
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // 导航链接悬停效果
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+      });
+      link.addEventListener('mouseleave', () => {
+        link.style.backgroundColor = 'transparent';
+      });
+    });
+    
+    // 社交媒体图标悬停效果
+    const socialLinks = document.querySelectorAll('a[title]');
+    socialLinks.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.style.transform = 'scale(1.1)';
+        link.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+      });
+      link.addEventListener('mouseleave', () => {
+        link.style.transform = 'scale(1)';
+        link.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
+      });
+    });
+  </script>
 </body>
 </html>

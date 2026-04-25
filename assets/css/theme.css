@@ -173,4 +173,119 @@ th {
     font-size: 1.2rem;
     padding: 0.3rem;
   }
+  
+  /* 导航栏响应式调整 */
+  nav {
+    padding: 10px;
+  }
+  
+  nav div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  nav div div {
+    flex-direction: row;
+  }
+  
+  /* 社交媒体图标响应式调整 */
+  .social-links {
+    gap: 8px;
+  }
+  
+  .social-links a {
+    font-size: 1rem;
+    padding: 4px;
+  }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color);
+  opacity: 0.5;
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 卡片悬停效果增强 */
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .card-container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* 按钮悬停效果 */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 链接悬停效果增强 */
+a:hover {
+  transform: translateY(-1px);
+}
+
+/* 加载动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 社交媒体图标颜色 */
+.social-links a:nth-child(1):hover {
+  color: #333;
+}
+
+.social-links a:nth-child(2):hover {
+  color: #00A1D6;
+}
+
+.social-links a:nth-child(3):hover {
+  color: #000;
+}
+
+[data-theme="dark"] .social-links a:nth-child(1):hover {
+  color: #fff;
+}
+
+[data-theme="dark"] .social-links a:nth-child(2):hover {
+  color: #00A1D6;
+}
+
+[data-theme="dark"] .social-links a:nth-child(3):hover {
+  color: #fff;
 }
