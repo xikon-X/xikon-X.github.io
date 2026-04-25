@@ -3,7 +3,7 @@
 {% include head.html %}
 <body>
   <!-- 导航栏 -->
-  <nav style="background-color: var(--header-background); border-bottom: 1px solid var(--border-color); padding: 15px 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000;">
+  <nav style="background-color: var(--header-background); border-bottom: 1px solid var(--border-color); padding: 15px 20px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
       <!-- 左侧 logo -->
       <a href="/" style="font-size: 1.5rem; font-weight: bold; color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 10px;">
@@ -43,6 +43,9 @@
       </div>
     </div>
   </nav>
+  
+  <!-- 顶部间距，避免内容被固定导航栏遮挡 -->
+  <div style="height: 80px;"></div>
   
   <div id="main" role="main" style="max-width: 1200px; margin: 0 auto; padding: 30px 20px;">
     <div class="card-container" style="background-color: var(--card-background); border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); padding: 40px; margin-bottom: 30px; transition: all 0.3s ease; border: 1px solid var(--border-color);">
