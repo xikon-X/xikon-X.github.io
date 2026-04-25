@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-title">{{ site.title }}</h1>
+  <p class="page-description">{{ site.description }}</p>
+  
+  {% if site.author.bio %}
+    <div class="author-profile">
+      <h2>关于我</h2>
+      <p>{{ site.author.bio }}</p>
+    </div>
+  {% endif %}
+  
+  {% if site.posts.size > 0 %}
+    <h2>最新博客</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <p class="rss-subscribe">
+      <a href="{{ "/feed.xml" | relative_url }}">订阅 RSS  feed</a>
+    </p>
+  {% endif %}
+</div>
