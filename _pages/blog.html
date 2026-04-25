@@ -4,23 +4,28 @@ title: 博客
 permalink: /blog/
 ---
 
-<div style="max-width: 800px; margin: 0 auto; padding: 20px 0;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 0;">
   <h1 style="font-size: 2rem; font-weight: 700; margin-bottom: 30px; text-align: center;">博客</h1>
+  <p style="text-align: center; color: var(--text-color); opacity: 0.8; margin-bottom: 40px;">分享技术心得、生活感悟和项目经验</p>
   
-  {% if site.posts.size > 0 %}
-    <ul style="list-style: none; padding: 0;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+    {% if site.posts.size > 0 %}
       {% for post in site.posts %}
-        <li style="margin-bottom: 30px; padding: 20px; background-color: var(--card-background); border-radius: 8px; box-shadow: var(--card-shadow); transition: all 0.3s ease; border: 1px solid var(--border-color);">
-          <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 10px;">
+        <div style="background-color: var(--card-background); border-radius: 8px; box-shadow: var(--card-shadow); padding: 20px; transition: all 0.3s ease; border: 1px solid var(--border-color);">
+          <h2 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 15px;">
             <a href="{{ post.url }}" style="color: var(--text-color); text-decoration: none;">{{ post.title }}</a>
           </h2>
-          <p style="color: var(--text-color); opacity: 0.7; font-size: 0.9rem; margin-bottom: 15px;">{{ post.date | date: "%Y-%m-%d" }}</p>
-          <p style="color: var(--text-color); margin-bottom: 15px;">{{ post.excerpt }}</p>
-          <a href="{{ post.url }}" style="display: inline-block; padding: 8px 16px; background-color: var(--primary-color); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s ease;">阅读更多</a>
-        </li>
+          <p style="color: var(--text-color); opacity: 0.7; font-size: 0.8rem; margin-bottom: 15px;">{{ post.date | date: "%Y-%m-%d" }}</p>
+          <p style="color: var(--text-color); margin-bottom: 15px; font-size: 0.9rem;">{{ post.excerpt }}</p>
+          <a href="{{ post.url }}" style="display: inline-flex; align-items: center; gap: 5px; color: var(--primary-color); text-decoration: none; font-size: 0.9rem; transition: all 0.3s ease;">
+            阅读更多 <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+          </a>
+        </div>
       {% endfor %}
-    </ul>
-  {% else %}
-    <p style="text-align: center; color: var(--text-color); opacity: 0.7;">暂无博客文章</p>
-  {% endif %}
+    {% else %}
+      <div style="background-color: var(--card-background); border-radius: 8px; box-shadow: var(--card-shadow); padding: 20px; transition: all 0.3s ease; border: 1px solid var(--border-color); grid-column: 1 / -1; text-align: center;">
+        <p style="color: var(--text-color); opacity: 0.8;">暂无博客文章</p>
+      </div>
+    {% endif %}
+  </div>
 </div>

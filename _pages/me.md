@@ -11,7 +11,6 @@ title: "我"
     </div>
     <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 10px;">希空 xikon</h2>
     <p style="color: var(--text-color); opacity: 0.8; margin-bottom: 20px;">在读本科生，不断学习，无限进步</p>
-    <button style="padding: 8px 16px; background-color: var(--primary-color); color: white; border: none; border-radius: 4px; cursor: pointer; transition: all 0.3s ease;">Follow</button>
   </div>
   <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
     <a href="https://github.com/xikon-X" style="color: var(--text-color); text-decoration: none; font-size: 1.2rem; transition: all 0.3s ease; display: flex; align-items: center; gap: 5px;">
@@ -40,11 +39,7 @@ title: "我"
   <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px;">教育经历</h2>
   <ul style="list-style: none; padding: 0;">
     <li style="color: var(--text-color); margin-bottom: 15px;">
-      <strong>学士学位</strong>，电子信息工程，[大学名称]，2022 - 2026（预计）
-      <ul style="list-style: none; padding-left: 20px; margin-top: 10px;">
-        <li style="color: var(--text-color); opacity: 0.8; margin-bottom: 5px;">主修课程：数据结构、算法、操作系统、计算机网络、数据库原理</li>
-        <li style="color: var(--text-color); opacity: 0.8; margin-bottom: 5px;">辅修课程：人工智能、机器学习、云计算</li>
-      </ul>
+      <strong>学士学位</strong>，电子信息工程，2022 - 2026（预计）
     </li>
   </ul>
 </div>
